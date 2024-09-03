@@ -1,0 +1,149 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -4,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": 431,
+    "database": 4,
+    "databaseName": "WSDJ",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [],
+    "relationshipIds": [],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "H0HmoVqyRGnzWC-K5hyEw": {
+        "id": "H0HmoVqyRGnzWC-K5hyEw",
+        "name": "member",
+        "comment": "회원테이블",
+        "columnIds": [
+          "wEucCeLi2eF0Wh0v7Hkjr",
+          "9m8MuVqgDZtu2A4hfM0sO"
+        ],
+        "seqColumnIds": [
+          "wEucCeLi2eF0Wh0v7Hkjr",
+          "9m8MuVqgDZtu2A4hfM0sO"
+        ],
+        "ui": {
+          "x": 560,
+          "y": 152,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 62,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1725339150529,
+          "createAt": 1725339097472
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "wEucCeLi2eF0Wh0v7Hkjr": {
+        "id": "wEucCeLi2eF0Wh0v7Hkjr",
+        "tableId": "H0HmoVqyRGnzWC-K5hyEw",
+        "name": "member_id",
+        "comment": "회원아이디",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 61,
+          "widthComment": 62,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1725339143919,
+          "createAt": 1725339107729
+        }
+      },
+      "9m8MuVqgDZtu2A4hfM0sO": {
+        "id": "9m8MuVqgDZtu2A4hfM0sO",
+        "tableId": "H0HmoVqyRGnzWC-K5hyEw",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1725339148471,
+          "createAt": 1725339148471
+        }
+      }
+    },
+    "relationshipEntities": {},
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  },
+  "lww": {
+    "settings.databaseName": [
+      "settings",
+      -1,
+      -1,
+      {
+        "databaseName": 1725339094345
+      }
+    ],
+    "H0HmoVqyRGnzWC-K5hyEw": [
+      "tableEntities",
+      1725339097471,
+      1725342925562,
+      {
+        "name": 1725339102602,
+        "comment": 1725339106066
+      }
+    ],
+    "wEucCeLi2eF0Wh0v7Hkjr": [
+      "tableColumnEntities",
+      1725339146465,
+      1725339145507,
+      {
+        "options(notNull)": 1725339115470,
+        "comment": 1725339123161,
+        "name": 1725339143918,
+        "dataType": 1725339139950
+      }
+    ],
+    "9m8MuVqgDZtu2A4hfM0sO": [
+      "tableColumnEntities",
+      1725339148470,
+      -1,
+      {}
+    ]
+  }
+}
