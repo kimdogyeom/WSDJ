@@ -1,5 +1,6 @@
-package DHS.WSDJ_FIN.domain;
+package DHS.WSDJ.domain;
 
+import DHS.WSDJ.domain.member.MemberProject;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -10,9 +11,14 @@ import jakarta.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Entity
-public class Project {
+@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class Project extends DateEntity {
 
 	@Id @GeneratedValue
 	@Column(name = "project_id")
@@ -37,9 +43,6 @@ public class Project {
 	private List<ProjectRestriction> restriction = new ArrayList<>();
 
 	@OneToMany(mappedBy = "project")
-	private List<StudentProject> stuProejctList;
-
-	@OneToMany(mappedBy = "project")
-	private List<AdminProject> adminProjectList;
+	private List<MemberProject> stuProejctList;
 
 }

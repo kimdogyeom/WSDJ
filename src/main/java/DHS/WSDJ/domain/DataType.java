@@ -1,4 +1,5 @@
-package DHS.WSDJ_FIN.domain;
+package DHS.WSDJ.domain;
+
 
 public enum DataType {
 
