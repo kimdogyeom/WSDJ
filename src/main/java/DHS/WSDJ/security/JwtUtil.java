@@ -53,8 +53,7 @@ public class JwtUtil {
      */
     private String createToken(CustomUserInfoDto member, long expireTime) {
         Claims claims = Jwts.claims();
-        claims.put("memberId", member.getId());
-        claims.put("email", member.getEmail());
+        claims.put("memberLoginId", member.getLoginId());
         claims.put("role", member.getRole());
 
         ZonedDateTime now = ZonedDateTime.now();
@@ -75,8 +74,8 @@ public class JwtUtil {
      * @param token
      * @return User ID
      */
-    public Long getUserId(String token) {
-        return parseClaims(token).get("memberId", Long.class);
+    public String getUserId(String token) {
+        return parseClaims(token).get("memberLoginId", String.class);
     }
 
 

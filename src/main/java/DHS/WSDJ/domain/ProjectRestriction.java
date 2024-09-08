@@ -25,10 +25,11 @@ public class ProjectRestriction {
 	@JoinColumn(name = "proejct_id")
 	private Project project;
 
+	// 참여제한 조건
 	@Enumerated(EnumType.STRING)
 	private RestrictionType restrictionType;
 
-	// 조건에 대한 값
+	// 참여제한 조건에 대한 값
 	private String restrictionValue;
 
 }

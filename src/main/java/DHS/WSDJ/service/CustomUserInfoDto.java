@@ -14,9 +14,9 @@ public class CustomUserInfoDto{
 
 	private Long id;
 
-	private String name;
+	private String loginId;
 
-	private String email;
+	private String name;
 
 	private String password;
 

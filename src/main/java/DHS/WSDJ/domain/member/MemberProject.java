@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class MemberProject {
+
 	@Id @GeneratedValue
 	private Long id;
 
